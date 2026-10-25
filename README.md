@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Tiny Library
 
-## Getting Started
+**Tiny Library** is a minimalist, modern book-curation web application designed to help readers discover quality books without feeling overwhelmed by endless options. Built with **Next.js 16**, this application focuses on simplicity, intentional design, and ease of navigation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Key Features
+
+- **Curated Book Browsing**: Explore a hand-picked collection of titles across multiple genres (Fiction, Non-Fiction, Romance, Fantasy, Thriller, Horror, Historical, Biography, Self-Help).
+- **Genre Filtering**: Quick and responsive filtering sidebar to find books by category.
+- **Detailed Book View**: Dedicated individual views featuring full artwork, author details, publication date, likes counter, and genre tags.
+- **Like / Interaction System**: Real-time feedback for favorited books.
+- **Clean & Minimalist Aesthetics**: Modern, responsive layout with custom image masks and smooth transitions.
+- **About & Ethos Page**: Overview of the platform's mission and core values with an integrated contact CTA.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: TypeScript 
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Deployment**: Vercel
+
+---
+
+## 📁 Project Structure
+
+```text
+tiny-library/
+├── public/              # Static assets (logos, default book covers)
+├── src/
+│   ├── app/             # Next.js 16 App Router pages & layouts
+│   │   ├── page.tsx     # Landing Page
+│   │   ├── books/       # Books catalogue & detail routes
+│   │   └── about/       # About page & Ethos
+│   ├── components/      # Reusable UI components (Navbar, BookCard, Sidebar, etc.)
+│   ├── lib/             # Utility functions & data fetchers
+│   └── types/           # TypeScript interfaces and types
+├── README.md
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+Ensure you have Node.js installed on your system:
+- **Node.js**: `v18.x` or higher
+- **npm**, **yarn**, **pnpm**, or **bun**
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/assadullahhassan/tiny-library.git
+   cd tiny-library
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   # or
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Open in browser:**
+   Navigate to `http://localhost:3000` to view the application in action.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📜 Available Scripts
+
+- `npm run dev` – Starts the development server.
+- `npm run build` – Builds the production application.
+- `npm run start` – Runs the built production server.
+- `npm run lint` – Runs ESLint checks.
+
+---
